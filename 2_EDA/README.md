@@ -10,7 +10,7 @@ Analysis of customer behavior, retention, and lifetime value for an e-commerce c
 
 ## Clean Up Data
 
-**🖥️ Query**: [cohort_analysis_view.sql](cohort_analysis.sql)
+**🖥️ Query**: [cohort_analysis_view.sql](cohort_analysis_view.sql)
 
 - Aggregated sales and customer data into revenue metrics
 - Calculated first purchase dates for cohort analysis
@@ -49,28 +49,28 @@ Analysis of customer behavior, retention, and lifetime value for an e-commerce c
 
 **📈 Visualization:**
 
-> ⚠️ Note: This only includes 2 charts. 
+> ⚠️ Note: This only includes 2 charts.
 
-Customer Revenue by Cohort (Adjusted for time in market) - First Purchase Date 
+Customer Revenue by Cohort (Adjusted for time in market) - First Purchase Date
 
 <img src="Images/5.2_customer_revenue_normalized.png" alt="Customer Revenue Normalized" width="50%">
 
 Investigate Monthly Revenue & Customer Trends (3 Month Rolling Average)
 
-<img src="Images/5.2_monthly_revenue_customers_3mo.png" alt="Monthly Revenue & CustomerTrends" width="50%">  
+<img src="Images/5.2_monthly_revenue_customers_3mo.png" alt="Monthly Revenue & Customer Trends" width="50%">
 
-📊 **Key Findings:**  
-- Customer revenue is declining, older cohorts (2016-2018) spent ~$2,800+, while 2024 cohort spending dropped to ~$1,970.  
-- Revenue and customers peaked in 2022-2023, but both are now trending downward in 2024.  
-- High volatility in revenue and customer count, with sharp drops in 2020 and 2024, signaling retention challenges.  
+📊 **Key Findings:**
+- Customer revenue is declining, older cohorts (2016-2018) spent ~$2,800+, while 2024 cohort spending dropped to ~$1,970.
+- Revenue and customers peaked in 2022-2023, but both are now trending downward in 2024.
+- High volatility in revenue and customer count, with sharp drops in 2020 and 2024, signaling retention challenges.
 
-💡 **Business Insights:**  
-- Boost retention & re-engagement by targeting recent cohorts (2022-2024) with personalized offers to prevent churn.  
-- Stabilize revenue fluctuations and introduce loyalty programs or subscriptions to ensure consistent spending.  
+💡 **Business Insights:**
+- Boost retention & re-engagement by targeting recent cohorts (2022-2024) with personalized offers to prevent churn.
+- Stabilize revenue fluctuations and introduce loyalty programs or subscriptions to ensure consistent spending.
 - Investigate cohort differences by applying successful strategies from high-spending cohorts (2016-2018) to newer ones.
 
 ### 3. Customer Retention
-🖥️ Query: [3_retention_analysis.sql](3_retention_analysis.sql)
+**🖥️ Query**: [3_retention_analysis.sql](3_retention_analysis.sql)
 
 - Identified customers at risk of churning
 - Analyzed last purchase patterns
@@ -78,16 +78,16 @@ Investigate Monthly Revenue & Customer Trends (3 Month Rolling Average)
 
 **📈 Visualization:**
 
-<img src="Images/7.3_customer_churn_cohort_year.png" alt="Customer Churn by Cohort Year" style="width: 50%; height: auto;">
+<img src="Images/7.3_customer_churn_cohort_year.png" alt="Customer Churn by Cohort Year" width="50%">
 
-📊 **Key Findings:**  
-- Cohort churn stabilizes at ~90% after 2-3 years, indicating a predictable long-term retention pattern.  
-- Retention rates are consistently low (8-10%) across all cohorts, suggesting retention issues are systemic rather than specific to certain years.  
-- Newer cohorts (2022-2023) show similar churn trajectories, signaling that without intervention, future cohorts will follow the same pattern.  
+📊 **Key Findings:**
+- Cohort churn stabilizes at ~90% after 2-3 years, indicating a predictable long-term retention pattern.
+- Retention rates are consistently low (8-10%) across all cohorts, suggesting retention issues are systemic rather than specific to certain years.
+- Newer cohorts (2022-2023) show similar churn trajectories, signaling that without intervention, future cohorts will follow the same pattern.
 
-💡 **Business Insights:**  
-- Strengthen early engagement strategies to target the first 1-2 years with onboarding incentives, loyalty rewards, and personalized offers to improve long-term retention.  
-- Re-engage high-value churned customers by focusing on targeted win-back campaigns rather than broad retention efforts, as reactivating valuable users may yield higher ROI.  
+💡 **Business Insights:**
+- Strengthen early engagement strategies to target the first 1-2 years with onboarding incentives, loyalty rewards, and personalized offers to improve long-term retention.
+- Re-engage high-value churned customers by focusing on targeted win-back campaigns rather than broad retention efforts, as reactivating valuable users may yield higher ROI.
 - Predict & preempt churn risk and use customer-specific warning indicators to proactively intervene with at-risk users before they lapse.
 
 ## Strategic Recommendations
@@ -109,5 +109,5 @@ Investigate Monthly Revenue & Customer Trends (3 Month Rolling Average)
 
 ## Technical Details
 - **Database:** PostgreSQL
-- **Analysis Tools:** PostgreSQL, Dbeaver
+- **Analysis Tools:** PostgreSQL, DBeaver
 - **Visualization:** ChatGPT
